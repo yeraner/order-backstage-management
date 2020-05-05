@@ -53,14 +53,17 @@ export default class index extends Component {
                     {...layout}
                     name="normal_login"
                     className="login-form"
-                    initialValues={{ remember: true }}
+                    initialValues={{ 
+                        username:18269137161,
+                        password:"a123456"
+                     }}
                     onFinish={this.onFinish}
                     >
                     <Form.Item
                         name="username"
                         rules={[{ required: true, message: 'Please input your Username!' }]}
                     >
-                        <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="请输入帐号" />
+                        <Input prefix={<UserOutlined className="site-form-item-icon"/>} placeholder="请输入帐号" name="username"/>
                     </Form.Item>
                     <Form.Item
                         name="password"
@@ -70,6 +73,7 @@ export default class index extends Component {
                         prefix={<LockOutlined className="site-form-item-icon" />}
                         type="password"
                         placeholder="请输入密码"
+                        name="password"
                         />
                     </Form.Item>
                     <Form.Item>
