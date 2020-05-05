@@ -1,0 +1,35 @@
+.header{
+    height: 64px;
+    background: #1890ff;
+    display: flex;
+}
+.ant-layout-header{
+    padding: 0 10px;
+}
+.logo{
+    height:64px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    flex:1;
+}
+.logo img{
+    height:64px;
+    width: 20px;
+}
+.avatar span {
+    color: #fff;
+    margin-right: 8px;
+    font-weight: bold;
+    
+}
+.site-layout-background {
+    background: #fff;
+}
+.ant-menu-item::after {
+    border-right: 0;
+}
+
+.ant-menu-submenu-selected {
+    color: #fe7844;
+  }

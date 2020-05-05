@@ -1,0 +1,13 @@
+.statistic{
+    margin: 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.echart {
+    margin-top: 46px;
+}
+.ant-statistic-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+}
