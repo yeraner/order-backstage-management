@@ -14,7 +14,7 @@ const service = axios.create({
 service.interceptors.request.use(config=>{
     // console.log("request-config",config)
     //后续authToken值肯定需要从本地存储取出来，然后再去发给后端
-    config.data = {...config.data,authToken:"adjlsajdlaoeuasd"}
+    config.data = {...config.data,authToken:localStorage.getItem('token')}
     return config
 })
 
